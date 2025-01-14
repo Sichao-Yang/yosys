@@ -53,7 +53,7 @@ SANITIZER =
 # SANITIZER = cfi
 
 # Prefer using ENABLE_DEBUG over setting these
-OPT_LEVEL := -O3
+OPT_LEVEL := -Og
 GCC_LTO :=
 CLANG_LTO := -flto=thin
 
