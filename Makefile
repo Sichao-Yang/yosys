@@ -31,7 +31,7 @@ ENABLE_PYOSYS := 0
 # other configuration flags
 ENABLE_GCOV := 0
 ENABLE_GPROF := 0
-ENABLE_DEBUG := 0
+ENABLE_DEBUG := 1
 ENABLE_LTO := 0
 ENABLE_CCACHE := 0
 # sccache is not always a drop-in replacement for ccache in practice
@@ -175,7 +175,7 @@ ABCMKARGS = CC="$(CXX)" CXX="$(CXX)" ABC_USE_LIBSTDCXX=1 ABC_USE_NAMESPACE=abc V
 
 # set ABCEXTERNAL = <abc-command> to use an external ABC instance
 # Note: The in-tree ABC (yosys-abc) will not be installed when ABCEXTERNAL is set.
-ABCEXTERNAL ?=
+ABCEXTERNAL ?= ${DPV}/abc/abc
 
 define newline
 

@@ -7,7 +7,7 @@ yosys -p '
 	flatten demo; delete -output
 	memory_map; opt -full
 	techmap; opt -fast
-	abc -fast -g AND; opt_clean
+	abc -fast -g AND; opt_clean;
 	write_aiger -map demo.aim demo.aig
 '
 super_prove demo.aig > demo.aiw
