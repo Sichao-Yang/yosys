@@ -8,7 +8,7 @@ Yosys 0.48 .. Yosys 0.49-dev
 Yosys 0.47 .. Yosys 0.48
 --------------------------
  * Various
-    - Removed "read_ilang" deprecated pass.
+    - Removed "read_rtlil" deprecated pass.
     - Enhanced boxing features in the experimental "abc_new" command.
     - Added new Tcl methods for design inspection.
     - Added clock enable inference to "dfflibmap".
@@ -851,7 +851,7 @@ Yosys 0.8 .. Yosys 0.9
     - Added "mutate" pass
     - Added "hdlname" attribute
     - Added "rename -output"
-    - Added "read_ilang -lib"
+    - Added "read_rtlil -lib"
     - Improved "proc" full_case detection and handling
     - Added "whitebox" and "lib_whitebox" attributes
     - Added "read_verilog -nowb", "flatten -wb" and "wbflip"
